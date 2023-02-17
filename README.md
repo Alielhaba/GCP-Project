@@ -17,3 +17,9 @@ GCP Project Deploying Python App
 * Deploy this files to GKE 
 * get service port with minikube IP to browse
 
+
+> 1. Create [Sonarqube namspace](sonarqube-namespace.yml):
+
+```
+kubectl apply -f sonarqube-namespace.yml
+```
