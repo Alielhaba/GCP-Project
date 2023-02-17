@@ -12,18 +12,21 @@ GCP Project Deploying Python App
 ```
  docker build -t gcp-python-app 
 ```
-* Tag Docker Image (docker tag gcp-python gcr.io/careful-trainer-377212/gcp-python-app)
-* Push the Docker image to GKE `docker push (gcr.io/careful-trainer-377212/gcp-python-app)
+* Tag Docker Image 
+```
+docker tag gcp-python gcr.io/careful-trainer-377212/gcp-python-app
+```
+* Push the Docker image to GKE 
+```
+* docker push gcr.io/careful-trainer-377212/gcp-python-app
+```
 
 # SSH to private-vm
 
-* Get deployment files by git clone 
+* Get deployment files by
+```
+git clone 
+```
 * Deploy this files to GKE 
 * get service port with minikube IP to browse
 
-
-> 1. Create [Sonarqube namspace](sonarqube-namespace.yml):
-
-```
-kubectl apply -f sonarqube-namespace.yml
-```
