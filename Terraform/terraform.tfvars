@@ -1,0 +1,9 @@
+image = "debian-cloud/debian-11"
+subnet-name = ["managementsubnet" , "restrictedsubnet"]
+subnet-cider = ["10.1.0.0/24" , "10.2.0.0/24"]
+regions = "us-west1"
+VM-name = "private-vm"
+machine-type = "e2-micro"
+zone = "us-west1-b"
+service-name = "vm-service"
+project-name = "ali-ali-378121"
