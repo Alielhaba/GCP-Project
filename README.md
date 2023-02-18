@@ -16,12 +16,12 @@ GCP Project Deploying Python App
 
 * Tag Docker Image 
 ```
-docker tag devops-python gcr.io/ali-ali-378121/devops-py
+docker tag devops-python gcr.io/ali-ali-378200/devops-py
 ```
 ![Taged image](https://user-images.githubusercontent.com/118537759/219821291-7d5051c9-2054-40e7-a2cf-fd11fcbe7ebc.png)
 * Push the Docker image to GKE 
 ```
-docker push gcr.io/ali-ali-378121/devops-py
+docker push gcr.io/ali-ali-378200/devops-py
 ```
 ![Push](https://user-images.githubusercontent.com/118537759/219821280-a752648b-305f-4e23-a3c9-46d136e9076d.png)
 # *GCR Console*

@@ -11,3 +11,17 @@ module "Private-VM" {
     
 }
 
+module "Private-Cluster" {
+ source = "./Cluster"
+ cluster-name = "private-cluster"
+ cluster-region = "us-west1-b"
+ subnet-link = module.subnets.subnet-link-Rest
+ vpc = module.vpc.vpc-link
+ network-name = "manage-subnet"
+ poll-name = "poll1"
+ pool-region = "us-west1-b"
+ service-name = "GKE-service"
+ project-name = var.project-name
+ 
+
+}
