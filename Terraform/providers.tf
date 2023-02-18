@@ -1,4 +1,4 @@
 provider "google" {
-  project     = "ali-ali-378121"
+  project     = "ali-ali-378200"
   region      = "us-west1"
 }

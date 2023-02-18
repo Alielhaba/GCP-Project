@@ -14,10 +14,6 @@ variable "nat-name" {
   type = string
 }
 
-variable "router-name" {
-  type = string
-}
-
 variable "region-name" {
   type = string
 }

@@ -4,7 +4,6 @@ module "vpc" {
   firewall-name = "firewall-pro"
   dir-type = "INGRESS"
   nat-name = "nat1"
-  router-name = "custom-router"
   region-name = "us-west1"
   subnet-id = module.subnets.subnet-id-manage
   subnet-region = module.subnets.subnet-region-manage
