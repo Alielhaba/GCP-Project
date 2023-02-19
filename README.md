@@ -28,12 +28,28 @@ docker push gcr.io/ali-ali-378200/devops-py
 ![console](https://user-images.githubusercontent.com/118537759/219818162-5ac69710-7149-4e8d-8a5f-f8cddf95da49.png)
 
 
-# SSH to private-vm
-
-* Get deployment files by
+# SSH to private-vm and follow this steps 
+* installing git
 ```
-git clone 
+sudo apt update  
 ```
-* Deploy this files to GKE 
-* get service port with minikube IP to browse
+```
+sudo apt install git  
+```
+* Get deployment files (yaml-files) from my repo 
+```
+git clone git@github.com:Alielhaba/GCP-Project.git
+```
+* Connect Private VM to Private GKE 
+```
+gcloud container clusters get-credentials private-cluster --zone us-west1-b --project ali-ali-378200
+```
+* Deploy Pythom App 
+```
+kubectl create -f Yaml-files
+```
+* Get service IP and Port to brows the Python-App 
+```
+kubectl get svc
+```
 
