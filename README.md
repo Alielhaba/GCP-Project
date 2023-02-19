@@ -2,16 +2,21 @@
 ## About the project:
 **Project for deploying python app first by build the infrastructure by *Terraform* using GCP which consist of some resources defined in the image below , build docker image using *Docker* and deploy this image using Private Cluster using Private VM **
 
-###-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+###                ______________________________________________________________________________________________
 
-# Infrastructure Components
+# *Infrastructure Components*
 ![GCP-Project](https://user-images.githubusercontent.com/118537759/219687279-8204b48d-0e94-4326-90ac-e8f1dfb93220.jpeg)
-# Requires to Start Project
+
+
+# *Requires to Start Project*
+
 ""IN YOUR LOCAL MACHINE""
 - Install Terraform
 - Install Docker
 
-# Build docker image from docker file  - Push the image to GKE (Should have an account)
+
+
+# *Build docker image from docker file*  - Push the image to GKE (Should have an account)
 
 * Build the Docker image  
 ```
@@ -33,7 +38,9 @@ docker push gcr.io/ali-ali-378200/devops-py
 ![console](https://user-images.githubusercontent.com/118537759/219818162-5ac69710-7149-4e8d-8a5f-f8cddf95da49.png)
 
 
-# SSH to private-vm and follow this steps 
+
+# *SSH to private-vm and follow this steps *
+
 * Installing git
 ```
 sudo apt update  
@@ -66,6 +73,8 @@ kubectl create -f Yaml-files
 kubectl get svc
 ```
 ![SVC-IP-Port](https://user-images.githubusercontent.com/118537759/219980806-84e86148-7840-43ac-bfe9-8287e6127c22.png)
+
+
 
 # Python-App after deplying 
 * (1)
