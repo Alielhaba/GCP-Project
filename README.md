@@ -1,6 +1,6 @@
 # $${\color{red}GCP Project For Deploying Python App}$$
 ## About the project:
-**Project for deploying python app first by build the infrastructure by *Terraform* using GCP which consist of some resources defined in the image below , build docker image using *Docker* and deploy this image using Private Cluster using Private VM **
+*Project for deploying python app first by build the infrastructure by *Terraform* using GCP which consist of some resources defined in the image below , build docker image using *Docker* and deploy this image using Private Cluster using Private VM *
 
 ###                ______________________________________________________________________________________________
 
