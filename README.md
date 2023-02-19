@@ -1,4 +1,8 @@
-GCP Project Deploying Python App 
+# $${\color{red}GCP Project For Deploying Python App}$$
+## About the project:
+**Project for deploying python app first by build the infrastructure by *Terraform* using GCP which consist of some resources defined in the image below , build docker image using *Docker* and deploy this image using Private Cluster using Private VM **
+
+
 # Infrastructure Components
 ![GCP-Project](https://user-images.githubusercontent.com/118537759/219687279-8204b48d-0e94-4326-90ac-e8f1dfb93220.jpeg)
 # Requires to Start Project
@@ -29,27 +33,37 @@ docker push gcr.io/ali-ali-378200/devops-py
 
 
 # SSH to private-vm and follow this steps 
-* installing git
+* Installing git
 ```
 sudo apt update  
 ```
 ```
 sudo apt install git  
 ```
+![Git-installation](https://user-images.githubusercontent.com/118537759/219980768-4b1506e7-ae35-4411-80f9-990a5c055410.png)
+ 
 * Get deployment files (yaml-files) from my repo 
 ```
 git clone git@github.com:Alielhaba/GCP-Project.git
 ```
+![Git-clone](https://user-images.githubusercontent.com/118537759/219980777-ded77139-f8e2-4ef6-a626-fb394b939d55.png)
+
 * Connect Private VM to Private GKE 
 ```
 gcloud container clusters get-credentials private-cluster --zone us-west1-b --project ali-ali-378200
 ```
+![Connect-tocluster](https://user-images.githubusercontent.com/118537759/219980896-4f390f3b-0c8f-4d02-a157-fa66eaf04cb4.png)
+
 * Deploy Pythom App 
 ```
 kubectl create -f Yaml-files
 ```
+![Deploy-App](https://user-images.githubusercontent.com/118537759/219980798-de90beec-3e2c-4135-8d85-c2e2cf1c83f6.png)
+
 * Get service IP and Port to brows the Python-App 
 ```
 kubectl get svc
 ```
+![SVC-IP-Port](https://user-images.githubusercontent.com/118537759/219980806-84e86148-7840-43ac-bfe9-8287e6127c22.png)
+
 
