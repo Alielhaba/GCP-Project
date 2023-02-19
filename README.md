@@ -2,6 +2,7 @@
 ## About the project:
 **Project for deploying python app first by build the infrastructure by *Terraform* using GCP which consist of some resources defined in the image below , build docker image using *Docker* and deploy this image using Private Cluster using Private VM **
 
+##-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Infrastructure Components
 ![GCP-Project](https://user-images.githubusercontent.com/118537759/219687279-8204b48d-0e94-4326-90ac-e8f1dfb93220.jpeg)
@@ -65,5 +66,13 @@ kubectl create -f Yaml-files
 kubectl get svc
 ```
 ![SVC-IP-Port](https://user-images.githubusercontent.com/118537759/219980806-84e86148-7840-43ac-bfe9-8287e6127c22.png)
+
+# Python-App after deplying 
+* (1)
+![Screenshot from 2023-02-20 01-27-10](https://user-images.githubusercontent.com/118537759/219982029-76582483-2cd6-4bc2-87db-aa8feb2e82fc.png)
+
+* (2)
+![Screenshot from 2023-02-20 01-27-21](https://user-images.githubusercontent.com/118537759/219982037-882af726-22fd-4486-861b-5dc06efea098.png)
+
 
 
